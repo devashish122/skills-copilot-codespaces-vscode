@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website – showcasing projects, skills, and contact info." />
+    <title>Alex Morgan | Developer &amp; Designer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#hero" class="logo" aria-label="Home">AM<span class="logo-dot">.</span></a>
+
+        <nav class="nav-links" id="navLinks" role="navigation" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-greeting animate-in">👋 Hello, I'm</p>
+        <h1 class="hero-name animate-in">Alex Morgan</h1>
+        <div class="hero-tagline animate-in">
+          <span>Full‑Stack Developer</span>
+          <span class="separator">·</span>
+          <span>UI/UX Enthusiast</span>
+          <span class="separator">·</span>
+          <span>Open‑Source Contributor</span>
+        </div>
+        <p class="hero-description animate-in">
+          I craft beautiful, performant web experiences that delight users and
+          solve real‑world problems.
+        </p>
+        <div class="hero-cta animate-in">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-scroll animate-in" aria-hidden="true">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image-wrap reveal">
+            <div class="about-image-frame">
+              <div class="about-avatar" aria-hidden="true">AM</div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-num">3+</span>
+              <span class="badge-text">Years of Experience</span>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <h3>Passionate about crafting great software</h3>
+            <p>
+              I'm a full‑stack developer based in San Francisco, CA, with a
+              strong focus on building accessible, human‑centered products. My
+              journey started with a love of tinkering, and has grown into a
+              career building meaningful digital experiences.
+            </p>
+            <p>
+              When I'm not coding, you'll find me hiking trails, experimenting
+              with new recipes, or contributing to open‑source projects.
+            </p>
+            <ul class="about-details">
+              <li><span class="detail-label">Location</span><span>San Francisco, CA</span></li>
+              <li><span class="detail-label">Email</span><span>alex@example.com</span></li>
+              <li><span class="detail-label">Available for</span><span>Freelance &amp; Full‑time</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">🌐</div>
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML &amp; CSS / Sass</li>
+              <li>JavaScript (ES2022+)</li>
+              <li>React &amp; Next.js</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js &amp; Express</li>
+              <li>Python &amp; FastAPI</li>
+              <li>PostgreSQL &amp; MongoDB</li>
+              <li>REST &amp; GraphQL</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">☁️</div>
+            <h3>DevOps &amp; Cloud</h3>
+            <ul>
+              <li>Docker &amp; Kubernetes</li>
+              <li>AWS / GCP</li>
+              <li>GitHub Actions (CI/CD)</li>
+              <li>Linux &amp; Bash</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>Design</h3>
+            <ul>
+              <li>Figma &amp; Adobe XD</li>
+              <li>UX Research</li>
+              <li>Responsive Design</li>
+              <li>Accessibility (WCAG)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proficiency reveal">
+          <h3>Proficiency</h3>
+          <div class="bars">
+            <div class="bar-item">
+              <div class="bar-label"><span>JavaScript / TypeScript</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-pct="90"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>React / Next.js</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-pct="85"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>Node.js / Express</span><span>80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-pct="80"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>Python</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-pct="75"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>DevOps / Cloud</span><span>65%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-pct="65"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="filter-tabs" role="tablist" aria-label="Project filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full‑Stack</button>
+          <button class="filter-btn" data-filter="oss" role="tab" aria-selected="false">Open‑Source</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="fullstack">
+            <div class="project-image" aria-hidden="true" style="--hue:220">
+              <span>🛒</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+              <h3>ShopWave</h3>
+              <p>A full‑featured e‑commerce platform with real‑time inventory, Stripe payments, and an admin dashboard.</p>
+              <div class="project-links">
+                <a href="#" aria-label="ShopWave live demo">Live Demo ↗</a>
+                <a href="#" aria-label="ShopWave GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="frontend">
+            <div class="project-image" aria-hidden="true" style="--hue:160">
+              <span>📊</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>Next.js</span><span>TypeScript</span><span>D3.js</span></div>
+              <h3>DataViz Dashboard</h3>
+              <p>Interactive analytics dashboard with 20+ chart types, CSV import, and shareable report generation.</p>
+              <div class="project-links">
+                <a href="#" aria-label="DataViz Dashboard live demo">Live Demo ↗</a>
+                <a href="#" aria-label="DataViz Dashboard GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="oss">
+            <div class="project-image" aria-hidden="true" style="--hue:280">
+              <span>🤖</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>Python</span><span>FastAPI</span><span>OpenAI</span></div>
+              <h3>AutoDocs AI</h3>
+              <p>Open‑source CLI that auto‑generates documentation for any codebase using LLMs. 2k+ GitHub stars.</p>
+              <div class="project-links">
+                <a href="#" aria-label="AutoDocs AI live demo">Live Demo ↗</a>
+                <a href="#" aria-label="AutoDocs AI GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="fullstack">
+            <div class="project-image" aria-hidden="true" style="--hue:30">
+              <span>💬</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>React</span><span>Socket.io</span><span>Redis</span></div>
+              <h3>ChatFlow</h3>
+              <p>Real‑time messaging app with end‑to‑end encryption, file sharing, and 10k+ concurrent users tested.</p>
+              <div class="project-links">
+                <a href="#" aria-label="ChatFlow live demo">Live Demo ↗</a>
+                <a href="#" aria-label="ChatFlow GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="frontend">
+            <div class="project-image" aria-hidden="true" style="--hue:340">
+              <span>🎵</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>Vue.js</span><span>Web Audio API</span></div>
+              <h3>BeatForge</h3>
+              <p>Browser‑based music production tool with a 16‑step sequencer, effects chain, and MIDI support.</p>
+              <div class="project-links">
+                <a href="#" aria-label="BeatForge live demo">Live Demo ↗</a>
+                <a href="#" aria-label="BeatForge GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-category="oss">
+            <div class="project-image" aria-hidden="true" style="--hue:100">
+              <span>🔧</span>
+            </div>
+            <div class="project-body">
+              <div class="project-tags"><span>TypeScript</span><span>Node.js</span><span>npm</span></div>
+              <h3>FormKit CLI</h3>
+              <p>Developer tool for scaffolding accessible form components with validation and i18n out of the box.</p>
+              <div class="project-links">
+                <a href="#" aria-label="FormKit CLI live demo">Live Demo ↗</a>
+                <a href="#" aria-label="FormKit CLI GitHub">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let's work together</h3>
+            <p>
+              Whether you have a project in mind, a job opportunity, or just
+              want to say hi — my inbox is always open!
+            </p>
+            <ul class="contact-links">
+              <li>
+                <a href="mailto:alex@example.com" class="contact-link">
+                  <span class="contact-link-icon">📧</span>
+                  alex@example.com
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span class="contact-link-icon">🐙</span>
+                  github.com/alexmorgan
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span class="contact-link-icon">💼</span>
+                  linkedin.com/in/alexmorgan
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  <span class="contact-link-icon">🐦</span>
+                  @alexmorgan_dev
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name" />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+              <span class="field-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+              <span class="field-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Designed &amp; built by <strong>Alex Morgan</strong> · <span id="year"></span></p>
+        <p class="footer-sub">Made with ❤️ using HTML, CSS &amp; JS</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
